@@ -26,6 +26,7 @@ public class MySQLIntegrationTest {
     void testMySQL() {
         long countBefore = bookRepository.count();
         assertThat(countBefore).isEqualTo(2);
+        bookRepository.findAll();
 
     }
 
