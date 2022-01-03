@@ -45,7 +45,6 @@ public class SpringBootJpaTestSlice {
     @Test
     void testJpaTestSpliceTransaction() {
         long countBefore = bookRepository.count();
-        bookRepository.findAll();
         assertThat(countBefore).isEqualTo(3);
 
     }
